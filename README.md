@@ -1,3 +1,5 @@
+#### IRC.app
+
 **IRC.app** is a genericized verison of a superb, BSD-licensed IRC client for Mac,
 the name of which (being the adjectival form of the word _"text"_) I have
 **thoroughly** redacted here to hide from search engines. The upstream product is
@@ -11,12 +13,12 @@ slightly easier to build as it does not require a code-signing identity, nor
 nag you about not having one.
 
 #### Installing
-For the lazy, there is a binary available here, built against the 10.7 SDK.
+For the lazy, there is a binary available [here](https://github.com/g-nix/IRC.app/releases/download/1.0.0/IRC.app.tgz), built against the 10.8 SDK.
 I haven't tested it on anything besides my own machine. It is not codesigned,
 so you'll need to pacify Gatekeeper. Instead, consider:
 
 #### Builing Your Own
-Requirements: Xcode installed and configured on a Mac running 10.7+.  
+Requirements: Xcode installed and configured on a Mac running 10.8+.  
 
 Checkout the source, then type:
 
