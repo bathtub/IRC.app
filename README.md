@@ -8,7 +8,7 @@ to buy it. You can find the upstream source for the here on Github as well,
 and the code here has been forked from that, but I've uncoupled the fork from
 the original for the same reason. The only real difference here is that it is
 slightly easier to build as it does not require a code-signing identity, nor
-~~~nag~~~ warn you about not having one. The links to the support channel, etc. have also been removed.
+~~nag~~ warn you about not having one. The links to the support channel, etc. have also been removed.
 
 #### Installing
 For the lazy, there is a binary available [here](https://github.com/g-nix/IRC.app/releases/download/1.0.0/IRC.app.tgz), built against the 10.8 SDK.
