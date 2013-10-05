@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C1BE0FA159A5FCF00DB3341 /* TPISystemProfiler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1BE0F8159A5FCF00DB3341 /* TPISystemProfiler.xib */; };
+		4C57A681131D378900252759 /* TPI_SP_SysInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57A67E131D378900252759 /* TPI_SP_SysInfo.m */; };
+		4C57A682131D378900252759 /* TPISystemProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C57A680131D378900252759 /* TPISystemProfiler.m */; };
+		4C78926D16C628920081E859 /* SystemInformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C78926A16C628040081E859 /* SystemInformation.framework */; };
+		4CD4026016C8C0EF00FEA686 /* BasicLanguage.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4025F16C8C0EF00FEA686 /* BasicLanguage.strings */; };
+		4CD69D82131E2BD200F4618E /* MacintoshModels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD69D81131E2BD200F4618E /* MacintoshModels.plist */; };
+		4CEE0DD112E09A1900C5096E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEE0DD012E09A1900C5096E /* Cocoa.framework */; };
+		63EF581515D2D5FE001071C8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EF581215D2D57F001071C8 /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		4C1BE0F9159A5FCF00DB3341 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/TPISystemProfiler.xib; sourceTree = "<group>"; };
+		4C57A67C131D378900252759 /* SystemProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemProfiler.h; sourceTree = "<group>"; };
+		4C57A67D131D378900252759 /* TPI_SP_SysInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPI_SP_SysInfo.h; sourceTree = "<group>"; };
+		4C57A67E131D378900252759 /* TPI_SP_SysInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPI_SP_SysInfo.m; sourceTree = "<group>"; };
+		4C57A67F131D378900252759 /* TPISystemProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPISystemProfiler.h; sourceTree = "<group>"; };
+		4C57A680131D378900252759 /* TPISystemProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPISystemProfiler.m; sourceTree = "<group>"; };
+		4C588BB216E34C00007EFF6D /* Code Signing Identity.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Code Signing Identity.xcconfig"; sourceTree = "<group>"; };
+		4C69189016E3276200BDE3A8 /* Shared Extension Configuration.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Shared Extension Configuration.xcconfig"; sourceTree = "<group>"; };
+		4C78926A16C628040081E859 /* SystemInformation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemInformation.framework; path = ../../../.tmp/SharedBuildProducts/SystemInformation.framework; sourceTree = "<group>"; };
+		4C86B0151748B8DF0028C7AE /* Shared Developer ID Release Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Shared Developer ID Release Configuration.xcconfig"; sourceTree = "<group>"; };
+		4CD4025F16C8C0EF00FEA686 /* BasicLanguage.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = BasicLanguage.strings; sourceTree = "<group>"; };
+		4CD69D81131E2BD200F4618E /* MacintoshModels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MacintoshModels.plist; sourceTree = "<group>"; };
+		4CEE0DD012E09A1900C5096E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		63EF581215D2D57F001071C8 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		8D576316048677EA00EA77CD /* SystemProfiler.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SystemProfiler.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D576313048677EA00EA77CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CEE0DD112E09A1900C5096E /* Cocoa.framework in Frameworks */,
+				63EF581515D2D5FE001071C8 /* IOKit.framework in Frameworks */,
+				4C78926D16C628920081E859 /* SystemInformation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* BlowfishCommandLine */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = BlowfishCommandLine;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CEE0DD012E09A1900C5096E /* Cocoa.framework */,
+				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+				63EF581215D2D57F001071C8 /* IOKit.framework */,
+				4C78926A16C628040081E859 /* SystemInformation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C69188E16E3276200BDE3A8 /* Build Configurations */,
+				4CD4025D16C8C0C600FEA686 /* Language Files */,
+				4C1BE079159A57BD00DB3341 /* Property Lists */,
+				4C1BE07B159A57C300DB3341 /* User Interface */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4C57A67C131D378900252759 /* SystemProfiler.h */,
+				4C57A67D131D378900252759 /* TPI_SP_SysInfo.h */,
+				4C57A67E131D378900252759 /* TPI_SP_SysInfo.m */,
+				4C57A67F131D378900252759 /* TPISystemProfiler.h */,
+				4C57A680131D378900252759 /* TPISystemProfiler.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D576316048677EA00EA77CD /* SystemProfiler.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C1BE079159A57BD00DB3341 /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				8D576317048677EA00EA77CD /* Info.plist */,
+				4CD69D81131E2BD200F4618E /* MacintoshModels.plist */,
+			);
+			name = "Property Lists";
+			sourceTree = "<group>";
+		};
+		4C1BE07B159A57C300DB3341 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				4C1BE0F8159A5FCF00DB3341 /* TPISystemProfiler.xib */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		4C69188E16E3276200BDE3A8 /* Build Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				4C588BB216E34C00007EFF6D /* Code Signing Identity.xcconfig */,
+				4C86B0151748B8DF0028C7AE /* Shared Developer ID Release Configuration.xcconfig */,
+				4C69189016E3276200BDE3A8 /* Shared Extension Configuration.xcconfig */,
+			);
+			name = "Build Configurations";
+			path = "../../Build Configurations";
+			sourceTree = "<group>";
+		};
+		4CD4025D16C8C0C600FEA686 /* Language Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4025F16C8C0EF00FEA686 /* BasicLanguage.strings */,
+			);
+			name = "Language Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D57630D048677EA00EA77CD /* SystemProfiler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "SystemProfiler" */;
+			buildPhases = (
+				4CD69D80131E2BB500F4618E /* Resources */,
+				8D576311048677EA00EA77CD /* Sources */,
+				8D576313048677EA00EA77CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SystemProfiler;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = BlowfishCommandLine;
+			productReference = 8D576316048677EA00EA77CD /* SystemProfiler.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "System Profiler Extension" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* BlowfishCommandLine */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D57630D048677EA00EA77CD /* SystemProfiler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CD69D80131E2BB500F4618E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD4026016C8C0EF00FEA686 /* BasicLanguage.strings in Resources */,
+				4CD69D82131E2BD200F4618E /* MacintoshModels.plist in Resources */,
+				4C1BE0FA159A5FCF00DB3341 /* TPISystemProfiler.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D576311048677EA00EA77CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C57A681131D378900252759 /* TPI_SP_SysInfo.m in Sources */,
+				4C57A682131D378900252759 /* TPISystemProfiler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C1BE0F8159A5FCF00DB3341 /* TPISystemProfiler.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1BE0F9159A5FCF00DB3341 /* English */,
+			);
+			name = TPISystemProfiler.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB911B08733D790010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Debug;
+		};
+		1DEB911C08733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Release;
+		};
+		1DEB911F08733D790010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C69189016E3276200BDE3A8 /* Shared Extension Configuration.xcconfig */;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = SystemProfiler;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1DEB912008733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C69189016E3276200BDE3A8 /* Shared Extension Configuration.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = SystemProfiler;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "SystemProfiler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911B08733D790010E9CD /* Debug */,
+				1DEB911C08733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "System Profiler Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911F08733D790010E9CD /* Debug */,
+				1DEB912008733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

@@ -1,0 +1,382 @@
+/* ********************************************************************* 
+
+ Copyright (c) 2010 — 2013 Codeux Software & respective contributors.
+        Please see Contributors.rtfd and Acknowledgements.rtfd
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of the IRC Client & Codeux Software nor the
+      names of its contributors may be used to endorse or promote products
+      derived from this software without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+ *********************************************************************** */
+
+"AboutWindowBuildNumber" = "Version %@";
+
+"AddressBookIgnoreEntryType" = "User Ignore";
+"AddressBookUserTrackingEntryType" = "User Tracking";
+
+"ApplicationWantsToTerminatePromptMessage" = "Quitting will disconnect you from any IRC server that you are connected to until you restart IRC.";
+"ApplicationWantsToTerminatePromptTitle" = "Do you want to quit IRC?";
+
+"AutoConnectAfterWakeUpHostNotReachable" = "%1$@ is not reachable. Delaying auto connect after waking up for %2$@ seconds. To force connect, use command \002/conn\002 or right-click server and click Connect.";
+
+"BlowfishEncryptionFailed" = "Encryption of message failed; not sending to server.";
+"BlowfishEncryptionKeyChanged" = "Encryption key changed; adjusting accordingly.";
+"BlowfishEncryptionStarted" = "Encryption started.";
+"BlowfishEncryptionStopped" = "Encryption stopped.";
+
+"CancelButton" = "Cancel";
+
+"ChannelApplicationTitleModeValue" = " (%@)";
+"ChannelApplicationTitleUserCount" = " (%ld Users)";
+
+"ChannelDeletePromptMessage" = "There is no undo and all data related to this channel, except for logs, will be erased.";
+"ChannelDeletePromptTitle" = "Do you want to delete the selection?";
+
+"ChannelListDialogNetworkName" = "Channel List for \"%@\"";
+"ChannelListDialogTitle" = "Channel List — %@"; // %@ = channel count.
+"ChannelListDialogHasChannels" = "%@ Public Channels";
+"ChannelListDialogHasSearchResults" = "%@ Public Channels - %@ Search Results";
+
+"CloseButton" = "Close";
+
+"CmdWShortcutClosePrivateMessageType" = "Close Query";
+"CmdWShortcutCloseWindowType" = "Close Window";
+"CmdWShortcutDisconnectServerType" = "Disconnect from %@";
+"CmdWShortcutLeaveChannelType" = "Leave Channel";
+"CmdWShortcutQuitApplicationType" = "Quit IRC & IRC";
+
+"ContinueButton" = "Continue";
+
+"CopyLogAsHTMLMenuItem" = "Copy Log as HTML";
+
+"ChannelKeySetDetectedDialogTitle" = "Secret Key Changed";
+"ChannelKeySetDetectedDialogMessage" = "The secret key for the channel %1$@ was changed by %2$@ to \"%3$@\" — would you like IRC to automatically update the channel configuration to remember this new key?";
+"ChannelKeySetDetectedDialogSuppressionMessage" = "Automatically update secret key";
+
+"ChannelKeyRemovalDetectedDialogTitle" = "Secret Key Changed";
+"ChannelKeyRemovalDetectedDialogMessage" = "The configured secret key for the channel %@ is no longer set. Would you like IRC to forget it?";
+"ChannelKeyRemovalDetectedialogSuppressionMessage" = "Automatically update secret key";
+
+"ChannelOldKeyDetectedDialogTitle" = "Secret Key Found";
+"ChannelOldKeyDetectedDialogMessage" = "IRC has found a secret key set for the channel %@. Would you like the configuration for this channel updated to remember the key?";
+"ChannelOldKeyDetectedDialogSuppressionMessage" = "Automatically update secret key";
+
+"DCCRequestErrorMessage" = "The IRC Client has received a DCC request that could not be processed.";
+
+"DefaultDisconnectQuitMessage" = "IRC Client: www.github.com";
+"DefaultNewConnectionName" = "Untitled Connection";
+
+"DeleteButton" = "Delete";
+
+"DeleteChannelMenuItem" = "Delete Channel";
+"DeletePrivateMessageMenuItem" = "Close Query";
+
+"FindSearchPanelPromptButton" = "Search";
+"FindSearchPanelPromptMessage" = "Enter a phrase to search for. Once a search is created, the keyboard shortcut ⌘G can be used to continue to the next search result and the combination ⌘⇧G to return to the previous.";
+"FindSearchPanelPromptTitle" = "Search for Message";
+
+"ForceReloadThemeMenuItem" = "Force Reload Style";
+
+"GlineReason" = "35d Your behavior is not conducive to the desired environment.";
+
+"ExcessFloodIRCDisconnectAlertTitle" = "Excess Flood";
+"ExcessFloodIRCDisconnectAlertMessage" = "A disconnection has occured due to excess flood. Reconnect?";
+"ExcessFloodIRCDisconnectAlertOpenFloodControlButton" = "Configure Flood Control";
+
+"HalfopCommandNotSupportedOnServer" = "The half-op (+h) mode is not supported on this server.";
+
+"IRCCTCPVersionInfoBasic" = "%1$@ IRC Client: www.github.com — v%2$@ (Flavor: %4$@)";
+
+"IRCCTCPVersionInfoDetailed_1" = "%1$@ %2$@ (Build #%3$@)";
+"IRCCTCPVersionInfoDetailed_2" = "%1$@ %2$@ (Git Reference: %3$@) (Flavor: %4$@)";
+
+"IRCAwayCommandDefaultReason" = "Be back later.";
+"IRCCTCPRequestIgnored" = "\002-CTCP-\002 %1$@ from %2$@ was ignored.";
+
+"IRCClientSupportedCapacities" = "away-notify multi-prefix userhost-in-names sasl server-time";
+"IRCCTCPSupportedReplies" = "CLIENTINFO FINGER PING TIME USERINFO VERSION";
+"IRCCTCPVersionTitle" = "\002Current Version:\002 %@";
+"IRCCTCPFingerCommandReply" = "Stop fingering me pervert!";
+"IRCCapCurrentlyEnabledNone" = "There are no capabilities in use.";
+"IRCCapCurrentlyEnbaled" = "The following capabilities are currently enabled: %@";
+"IRCChannelEmptyTopic" = "(No Topic)";
+"IRCChannelHasModes" = "Mode is \002%@\002";
+"IRCChannelHasTopic" = "Topic is \002%@\002";
+"IRCChannelHasTopicAuthor" = "Set by \002%1$@\002 on %2$@";
+"IRCChannelHasWebsite" = "Website is \002%@\002";
+"IRCChannelPreparingRejoinAttempt" = "Attempting to rejoin channel in three seconds.";
+"IRCChannelTopicChanged" = "\002%1$@\002 changed the topic to \002%2$@\002";
+"IRCConnectedToServer" = "Connection to host completed.";
+"IRCDisconnectedBySleepMode" = "Disconnect for Sleep Mode";
+"IRCDisconnectedByServerRedirect" = "Disconnected for server redirect.";
+"IRCDisconnectedByBadSSLCertificate" = "Disconnected from server because of an untrusted SSL certificate.";
+"IRCDisconnectedByTrialPeriodTimer" = "Disconnected from server due to trial period limit. Please consider purchasing IRC to continue or simply reconnect.";
+"IRCDisconnectedFromServer" = "Disconnected";
+"IRCDisconnectedByTimeout" = "%ld minutes have elapsed since last response from this connection. Disconnecting due to timeout.";
+"IRCMightDisconnectWithTimeout" = "%ld minutes have elapsed since last response from this connection. It is possible the connection is timing out.";
+"IRCHadRawError" = "Message(%1$d): %2$@";
+"IRCIsConnecting" = "Connecting to [%1$@] on port %2$ld";
+"IRCIsConnectingWithNormalProxy" = "Connecting to [%1$@, port %2$ld] via [%3$@, port %4$ld]";
+"IRCIsConnectingWithSystemProxy" = "Connecting to [%1$@, port %2$ld] via System Socks";
+"IRCIsReconnecting" = "Reconnecting …";
+"IRCIsReconnectingWithAttemptCount" = "Reconnecting (attempt #%@) …";
+"IRCIsRetryingConnection" = "Retrying …";
+"IRCModeSet" = "\002%1$@\002 sets mode \002%2$@\002";
+"IRCRawModeIsDisabled" = "Raw mode has been disabled. IRC will no longer output raw data.";
+"IRCRawModeIsEnabled" = "Raw mode has been enabled. IRC will now output all data that it receives from and sends to the IRC server in the Mac OS X \"Console\" application. To disable, execute \"/debug raw off\"";
+"IRCRawModeIsDisabledSessionStart" = "————————————— End Raw Mode Session —————————————";
+"IRCRawModeIsEnabledSessionStart" = "————————————— Begin Raw Mode Session —————————————";
+"IRCRecievedCTCPPingReply" = "\002-%1$@ CTCP-\002 %2$@ (%3$1.5f sec)";
+"IRCRecievedCTCPReply" = "\002-%1$@ CTCP-\002 %2$@ %3$@";
+"IRCRecievedCTCPRequest" = "\002-CTCP-\002 %1$@ from %2$@";
+"IRCServerHadNetsplitQuitMessage" = "Netsplit: %@";
+"IRCServerNetworkName" = "%@ IRC Network";
+"IRCTimerCommandRequiresInteger" = "Timer command requires number for interval. Syntax: \"/timer <seconds> <command>\"";
+"IRCUserChangedNickname" = "%1$@ is now known as \002%2$@\002";
+"IRCUserDisconnected" = "\002%1$@\002 (%2$@@%3$@) left IRC.";
+"IRCUserDisconnectedFromPrivateMessage" = "\002%1$@\002 left the query by disconnecting from IRC.";
+"IRCUserReconnectedToPrivateMessage" = "\002%1$@\002 joined the query by connecting to IRC.";
+"IRCUserHasModes" = "Your user mode is %@";
+"IRCUserInvitedToJoinChannel" = "Inviting %1$@ to join %2$@";
+"IRCUserInvitedYouToJoinChannel" = "%1$@!%2$@@%3$@ invited you to join %4$@";
+"IRCUserIsAway" = "%1$@ is away (%2$@)";
+"IRCUserIsNowIRCOperator" = "You are now an IRC Operator on %@";
+"IRCUserJoinedChannel" = "\002%1$@\002 (%2$@@%3$@) joined the channel.";
+"IRCUserKickedFromChannel" = "\002%1$@\002 kicked \002%2$@\002 from the channel. (%3$@)";
+"IRCUserPartedChannel" = "\002%1$@\002 (%2$@@%3$@) left the channel.";
+"IRCUserWhoisChannels" = "%1$@ is on %2$@";
+"IRCUserWhoisConnectedFrom" = "%1$@ is connected on %2$@ (%3$@)";
+"IRCUserWhoisHostmask" = "%1$@ has userhost %2$@@%3$@ and real name \"%4$@\"";
+"IRCUserWhoisUptime" = "%1$@ signed on at %2$@ and has been idle for %3$@";
+"IRCUserWhowasConnectedFrom" = "%1$@ was connected to %2$@ on %3$@";
+"IRCUserWhowasHostmask" = "%1$@ had userhost %2$@@%3$@ and real name \"%4$@\"";
+
+"InputRequiredToContinue" = "Input Required to Continue";
+
+"InputTextFieldPlaceholderValue" = "Send Message …";
+
+"InviteSheetMultiplePeopleSelected" = "%d users";
+"InviteSheetTargetDescription" = "Invite %@ to:";
+"InviteSheetTwoPeopleSelected" = "%1$@ and %2$@";
+
+"KickReason" = "Your behavior is not conducive to the desired environment.";
+"KillReason" = "Your behavior is not conducive to the desired environment.";
+
+"LoadedPlguinsCommandLoadedBundles" = "Loaded Bundles: %@";
+"LoadedPlguinsCommandLoadedScripts" = "Loaded Scripts: %@";
+"LoadedPlguinsCommandNothingLoaded" = "Nothing loaded.";
+
+"LagCheckRequestReplyMessage" = "Received lag check reply from %1$@. Time elapsed: %2$1.5f seconds. (Rating: %3$@)";
+"LagCheckRequestSentMessage" = "Waiting for response from lag check …";
+"LagCheckRequestUnknownReply" = "Received lag check reply even though we never sent a request for one. Exploit attempt?";
+
+"LagCheckRequestReplyRating_00" = "Yeah, okay…";
+"LagCheckRequestReplyRating_01" = "Are you plugged into the server?";
+"LagCheckRequestReplyRating_02" = "Almost No Lag.";
+"LagCheckRequestReplyRating_03" = "Very Fast.";
+"LagCheckRequestReplyRating_04" = "Fast.";
+"LagCheckRequestReplyRating_05" = "Average.";
+"LagCheckRequestReplyRating_06" = "Slow.";
+"LagCheckRequestReplyRating_07" = "Very Slow.";
+"LagCheckRequestReplyRating_08" = "Dang! Call your ISP.";
+"LagCheckRequestReplyRating_09" = "You Fail! (www.youfail.org)";
+
+"LogPathDoesNotExistMessage" = "No logs were found for this chat session.";
+"LogPathDoesNotExistTitle" = "No Logs Found";
+
+"NoLogLocationDefinedMenuItem" = "No Log Location Selected";
+
+"LogFileBeginOfSessionHeader" = "————————————— Begin Session —————————————";
+"LogFileEndOfSessionHeader" = "————————————— End Session —————————————";
+
+"PreferencesExportSaveLocationDialogMessage" = "Please select the location in which to save the file.\n\nIMPORTANT: The file that will be saved does not contain passwords\nas those are considered sensitive information. It also does not include\nany custom addons such as scripts and styles.";
+
+"PreferencesImportPreflightDialogTitle" = "Import Preferences";
+"PreferencesImportPreflightDialogMessage" = "During import, all connections will be disconnected and the contents of all channels cleared.\n\nPlease take note that the following preferences cannot be imported:\n\n    • Passwords.\n    • Log location.\n    • Any custom addons. Styles or scripts.\n\nAll other preferences will apply immediately.";
+"PreferencesImportPreflightDialogSelectFileButton" = "Select File";
+
+"PreferencesAlertSettingsGrowlIsDestination" = "Growl is running. Notifications will be forwarded to it.";
+"PreferencesAlertSettingsNotificationCenterIsDestination" = "Notifications will be posted using Notification Center.";
+"PreferencesAlertSettingsNoDestinationForNotifications" = "Growl is not running. Notifications will not be posted."; /* For Lion. It does not have NC. */
+
+"NoButton" = "No";
+
+/* If an event is not defined below for spoken events, then the odds are
+ good that the text to be spoken is localized somewhere else. For example,
+ the address book event type is defined near the end of this file. */
+"NotificationChannelMessageSpokenMessage"		= "Channel Message in %1$@ by %2$@, %3$@";
+"NotificationChannelNoticeSpokenMessage"		= "Channel Notice in %1$@ by %2$@, %3$@";
+"NotificationHighlightSpokenMessage"			= "Highlight in %1$@ by %2$@, %3$@";
+"NotificationInvitedSpokenMessage"				= "Invited to %1$@ by %2$@";
+"NotificationKickedSpokenMessage"				= "Kicked from %1$@ by %2$@";
+"NotificationNewPrivateMessageSpokenMessage"	= "New Private Message from %1$@, %2$@";
+"NotificationPrivateMessageSpokenMessage"		= "Private Message from %1$@, %2$@";
+"NotificationPrivateNoticeSpokenMessage"		= "Private Notice from %1$@, %2$@";
+"NotificationConnectedSpokenMessage"			= "Connected to %@";
+"NotificationDisconnectSpokenMessage"			= "Disconnected from %@";
+
+"NotificationAddressBookMatchMessageTitle"	= "Address Book Notification";
+"NotificationChannelMessageMessageTitle"	= "Channel Message: %@";
+"NotificationChannelNoticeMessageTitle"		= "Channel Notice: %@";
+"NotificationConnectedMessageTitle"			= "Connected: %@";
+"NotificationDisconnectMessageTitle"		= "Disconnected: %@";
+"NotificationHighlightMessageTitle"			= "Highlight: %@";
+"NotificationInvitedMessageTitle"			= "Invited: %@";
+"NotificationKickedMessageTitle"			= "Kicked: %@";
+"NotificationNewPrivateMessageMessageTitle"	= "New Private Message";
+"NotificationPrivateMessageMessageTitle"	= "Private Message";
+"NotificationPrivateNoticeMessageTitle"		= "Private Notice";
+
+"NotificationConnectedMessageDescription"	= "Connection successful.";
+"NotificationDisconnectMessageDescription"	= "Disconnection successful.";
+"NotificationInvitedMessageDescription"		= "%1$@ has invited you to %2$@";
+"NotificationKickedMessageDescription"		= "%1$@ has kicked you out: %2$@";
+
+"NotificationDialogPrivateMessageReplyPlaceholder"	= "Enter message to reply to this private message.";
+
+"OSXGoingToSleepQuitMessage" = "My %@ has gone to sleep. ZZZzzz…";
+
+"OkButton" = "OK";
+
+"OpeningLocalStyleResourcesCopyButton" = "Make Local Copy";
+"OpeningLocalStyleResourcesMessage" = "The style being opened is a read-only version bundled with IRC.\n\nWould you like to create a local copy? It will become the selected style and can then be modified.";
+"OpeningLocalStyleResourcesTitle" = "Resource Files";
+
+"PluginCommandClashErrorMessage" = "Error: The command %@ is shared by both a script and plugin. Sending to server because of inability to determine priority.";
+
+"PromptSuppressionButtonDefaultTitle" = "Do not show this message again";
+
+"QuitButton" = "Quit";
+
+"ScriptExecutionFailureBasic" = "Script Execution Failure: %@";
+"ScriptExecutionFailureDetailed" = "Script Execution Failure (%1$@: %2$@): %3$@";
+
+"SelfBanDetectedMessage" = "IRC has prevented you from banning yourself on %@.";
+
+"ServerDeletePromptMessage" = "There is no undo and all data related to this server, except for logs, will be erased.";
+"ServerDeletePromptTitle" = "Do you want to delete the selection?";
+
+"ServerNotConnectedLineSendError" = "Failed to send data to server. Not connected.";
+
+"ServerSheetHighlightListTableAllChannels" = "All Channels";
+"ServerSheetHighlightListTableExcludeEntry" = "Exclude";
+"ServerSheetHighlightListTableIncludeEntry" = "Match";
+
+"ServerSheetAutojoinNavigationTreeItem"	= "Channel List";
+"ServerSheetCommandsNavigationTreeItem"	= "Connect Commands";
+"ServerSheetEncodingNavigationTreeItem"	= "Encoding";
+"ServerSheetFloodControlNavigationTreeItem"	= "Flood Control";
+"ServerSheetGeneralNavigationTreeItem" = "General";
+"ServerSheetIdentityNavigationTreeItem"	= "Identity";
+"ServerSheetIgnoresNavigationTreeItem" = "Address Book";
+"ServerSheetMessageNavigationTreeItem" = "Messages";
+"ServerSheetMiscNavigationTreeItem" = "Miscellaneous";
+"ServerSheetProxyNavigationTreeItem" = "Proxy Server";
+"ServerSheetMentionsNavigationTreeItem" = "Mentions";
+"ServerSheetNetworkNavigationTreeItem" = "Network Socket";
+"ServerSheetZNCBouncerNavigationTreeItem" = "ZNC Bouncer";
+
+"ServerSheetAddressBookAdditionMenuAddIgnore" = "Add User Ignore Entry";
+"ServerSheetAddressBookAdditionMenuAddTracker" = "Add User Tracking Entry";
+
+"SetAsDefaultIRCClientPromptMessage" = "IRC is not set as the default IRC client for this copy of Mac OS X. Set it?";
+"SetAsDefaultIRCClientPromptTitle" = "Default IRC Client";
+
+"SetUserVhostPromptMessage"	= "Please enter desired vHost. (e.g. apple.vhost)";
+"SetUserVhostPromptTitle" = "Set User vHost";
+
+"ShunReason" = "1d Shunned.";
+
+"SocketBadSSLCertificateErrorMessage" = "The server that you are connecting to has a SSL certificate that has either expired or is not trusted. Would you like to connect to the server regardless?";
+"SocketBadSSLCertificateErrorTitle" = "Untrusted Connection";
+
+"SoundIsAlreadyMuted" = "Sound is already muted.";
+"SoundIsNoLongerMuted" = "Sound is no longer muted. ";
+"SoundIsNotMuted" = "Sound is not muted.";
+"SoundIsNowMuted" = "Sound has been muted.";
+
+"StyleTemplateLoadFailed" = "Template Load Failed: %@";
+
+"TXEmptySoundAlertLabel" = "None";
+
+"TXNotificationAddressBookMatchType"	= "Address Book Notification";
+"TXNotificationChannelMessageType"		= "Channel Message";
+"TXNotificationChannelNoticeType"		= "Channel Notice";
+"TXNotificationConnectType"				= "Connected";
+"TXNotificationDisconnectType"			= "Disconnected";
+"TXNotificationHighlightType"			= "Highlight";
+"TXNotificationInviteType"				= "Channel Invitation";
+"TXNotificationKickType"				= "Kicked from Channel";
+"TXNotificationNewPrivateMessageType"	= "Private Message (new)";
+"TXNotificationPrivateMessageType"		= "Private Message";
+"TXNotificationPrivateNoticeType"		= "Private Notice";
+
+"ThemeChangeOverridePromptChannelFont" = "• Channel View Font";
+"ThemeChangeOverridePromptMessage" = "The newly selected style \"%1$@\" has chosen to override the following preferences with ones that it prefers for the best viewing experience:\n\n%2$@";
+"ThemeChangeOverridePromptNicknameFormat" = "• Nickname Format";
+"ThemeChangeOverridePromptTimestampFormat" = "• Timestamp Format";
+"ThemeChangeOverridePromptWindowColors" = "• Window Colors";
+"ThemeChangeOverridePromptTitle" = "Preferred Selection";
+
+"TimeIntervalSinceFirstCommit" = "\002Time Since First Commit:\002 %@";
+
+"TimeAgo" = "%@ Ago";
+
+"TimeConvertPlural[DAY]" = "Days";
+"TimeConvertPlural[HOUR]" = "Hours";
+"TimeConvertPlural[MINUTE]" = "Minutes";
+"TimeConvertPlural[MONTH]" = "Months";
+"TimeConvertPlural[SECOND]" = "Seconds";
+"TimeConvertPlural[WEEK]" = "Weeks";
+"TimeConvertPlural[YEAR]" = "Years";
+
+"TimeConvert[DAY]" = "Day";
+"TimeConvert[HOUR]" = "Hour";
+"TimeConvert[MINUTE]" = "Minute";
+"TimeConvert[MONTH]" = "Month";
+"TimeConvert[SECOND]" = "Second";
+"TimeConvert[WEEK]" = "Week";
+"TimeConvert[YEAR]" = "Year";
+
+"TrustButton" = "Trust";
+
+"Unknown" = "Unknown";
+
+"UserHostmaskHoverTooltipMode_NA" = "No Privileges";
+"UserHostmaskHoverTooltipMode_V" = "Voice";
+"UserHostmaskHoverTooltipMode_H" = "Half-op";
+"UserHostmaskHoverTooltipMode_O" = "Operator";
+"UserHostmaskHoverTooltipMode_A" = "Super Admin";
+"UserHostmaskHoverTooltipMode_Q" = "Channel Owner";
+"UserHostmaskHoverTooltipMode_IRCop" = " — Server Staff Member";
+"UserHostmaskHoverTooltipUserIsAway" = "User is away.";
+"UserHostmaskHoverTooltipUserIsNotAway" = "User is not away.";
+
+"UserHostmaskHoverTooltipNoInformationAvailable" = "Information Not Available";
+
+"UserTrackingNicknameIsAvailable" = "User with nickname \"%1$@\" matching Address Book entry \"%2$@\" is available.";
+"UserTrackingNicknameNoLongerAvailable" = "User with nickname \"%1$@\" matching Address Book entry \"%2$@\" is no longer available.";
+"UserTrackingNicknameNowAvailable" = "User with nickname \"%1$@\" matching Address Book entry \"%2$@\" is now available.";
+
+"YesButton" = "Yes";

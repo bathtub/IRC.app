@@ -1,0 +1,30 @@
+#include "Shared Developer ID Release Configuration.xcconfig"
+
+// This configuration is designed for the Plugins folder of
+// IRC and assumes that the paths are relative to that
+// location.
+
+IRC_PROJECT_ROOT = ${SRCROOT}/../../../
+
+OBJROOT = ${IRC_PROJECT_ROOT}/.tmp/SharedBuildResults
+
+SYMROOT = ${OBJROOT}
+BUILD_DIR = ${OBJROOT}
+TARGET_TEMP_DIR = ${OBJROOT}
+SHARED_PRECOMPS_DIR = ${IRC_PROJECT_ROOT}/.tmp/SharedBuildPCH
+CONFIGURATION_BUILD_DIR = ${IRC_PROJECT_ROOT}/.tmp/SharedBuildProducts
+
+CODE_SIGN_ENTITLEMENTS = ${IRC_PROJECT_ROOT}/Resources/Sandbox/Exceptions/Auxiliary.entitlements
+
+HEADER_SEARCH_PATHS = "${IRC_PROJECT_ROOT}/Classes/Headers/**"
+LIBRARY_SEARCH_PATHS = "${IRC_PROJECT_ROOT}/Frameworks/**"
+FRAMEWORK_SEARCH_PATHS = "${IRC_PROJECT_ROOT}/Frameworks/**" "${IRC_PROJECT_ROOT}/.tmp/SharedBuildProducts/**"
+
+// The actual path of the copy of IRC being built is passed during during
+// the time that these are compiled. However, we still pass the installed
+// location by default so we can build the extensions by themselves.
+BUNDLE_LOADER = /Applications/IRC.app/Contents/MacOS/IRC
+
+DEAD_CODE_STRIPPING = YES
+PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES
+GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO

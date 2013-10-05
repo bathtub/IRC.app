@@ -1,0 +1,17 @@
+Custom scripts can be stored in the folder:
+
+"~/Library/Application Scripts/private.irc.irc/"
+
+This folder might not exist. If it does not, create it. IRC does not
+have write permission to this location so it cannot create it on its own.
+Scripts installed within this folder benefit from the ability to be ran 
+outside of the Mac OS sandbox giving them unrestricted access to the
+system as a whole. 
+
+Only Mac OS Mountain Lion or later can read scripts from this folder. 
+This is an unfortunate design flaw of the Mac OS sandbox that IRC
+cannot circumvent. 
+
+For more information, read the wiki:
+
+http://github.com/wiki/Writing-Scripts.wiki

@@ -1,0 +1,40 @@
+{{! The 'line types' folder needs to be copied to a custom style to modify this file. }}
+
+<div 	type="{{lineType}}" 
+		command="{{rawCommand}}"
+		highlight="{{highlightAttributeRepresentation}}" 
+		class="line {{lineClassAttributeRepresentation}}" 
+		id="line-{{lineNumber}}"
+		time="{{lineRenderTime}}">
+		
+{{#isRemoteMessage}}
+	<p>
+{{^isRemoteMessage}}
+	<p type="{{nicknameType}}">
+{{/isRemoteMessage}}
+
+		<span class="time">{{formattedTimestamp}} </span>
+		
+{{#isEncrypted}}
+	{{{encryptedMessageLockTemplate}}}
+{{/isEncrypted}}
+
+		<span class="message" type="{{lineType}}">
+			<span class="sender"
+				ondblclick="IRC.nicknameDoubleClicked()" 
+				oncontextmenu="IRC.openStandardNicknameContextualMenu()" 
+				type="{{nicknameType}}" 
+				nick="{{nickname}}" 
+				{{#nicknameColorHashingEnabled}} 
+					colornumber="{{nicknameColorNumber}}"
+				{{/nicknameColorHashingEnabled}}>{{formattedNickname}}</span>
+					{{{formattedMessage}}}
+					
+					{{#inlineMediaAvailable}}
+						{{#inlineMediaArray}}
+							<a href="{{{anchorLink}}}" onclick="return IRC.toggleInlineImage('{{anchorInlineImageUniqueID}}')"><img src="{{{imageURL}}}" class="inlineimage" id="inlineImage-{{anchorInlineImageUniqueID}}" style="display: none; max-width: {{preferredMaximumWidth}}px;" title="Hide image by shift clicking." /></a>
+						{{/inlineMediaArray}}
+					{{/inlineMediaAvailable}}
+		</span>
+	</p>
+</div>

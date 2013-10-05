@@ -1,0 +1,25 @@
+{{#inlineNicknameMatchFound}}
+<span class="inline_nickname" ondblclick="IRC.inlineNicknameDoubleClicked()" oncontextmenu="IRC.openInlineNicknameConircMenu()" colornumber="{{inlineNicknameColorNumber}}">
+{{/inlineNicknameMatchFound}}
+{{#fragmentTextColorIsSet}}
+<span class="effect"
+	color-number="{{fragmentTextColor}}" 
+
+	{{#fragmentBackgroundColorIsSet}}
+		bgcolor-number="{{fragmentBackgroundColor}}" 
+	{{/fragmentBackgroundColorIsSet}}
+>
+{{/fragmentTextColorIsSet}}
+{{#fragmentIsBold}}<b>{{/fragmentIsBold}}
+{{#fragmentIsItalicized}}<i>{{/fragmentIsItalicized}}
+{{#fragmentIsUnderlined}}<u>{{/fragmentIsUnderlined}}
+{{{messageFragment}}}
+{{#fragmentIsBold}}</b>{{/fragmentIsBold}}
+{{#fragmentIsItalicized}}</i>{{/fragmentIsItalicized}}
+{{#fragmentIsUnderlined}}</u>{{/fragmentIsUnderlined}}
+{{#fragmentTextColorIsSet}}
+</span>
+{{/fragmentTextColorIsSet}}
+{{#inlineNicknameMatchFound}}
+</span>
+{{/inlineNicknameMatchFound}}
