@@ -1,5 +1,3 @@
-#### IRC.app
-
 **IRC.app** is a genericized verison of a superb, BSD-licensed IRC client for Mac,
 the name of which (being the adjectival form of the word _"text"_) I have
 **thoroughly** redacted here to hide from search engines. The upstream product is
