@@ -706,6 +706,11 @@ static NSURL *transcriptFolderResolvedBookmark;
 	return [RZUserDefaults() boolForKey:@"ConfirmApplicationQuit"];
 }
 
++ (BOOL)rememberServerListQueryStates
+{
+	return [RZUserDefaults() boolForKey:@"ServerListRetainsQueriesBetweenRestarts"];
+}
+
 + (BOOL)rejoinOnKick
 {
 	return [RZUserDefaults() boolForKey:@"RejoinChannelOnLocalKick"];
@@ -1388,6 +1393,7 @@ static NSMutableArray *excludeKeywords = nil;
 	d[@"LogHighlights"]									= @(YES);
 	d[@"AutomaticallyDetectHighlightSpam"]				= @(YES);
 	d[@"LogTranscriptInBatches"]						= @(YES);
+	d[@"ReloadScrollbackOnLaunch"]						= @(YES);
 	d[@"ReplyUnignoredExternalCTCPRequests"]			= @(YES);
 	d[@"TrackNicknameHighlightsOfLocalUser"]			= @(YES);
 	d[@"WebKitDeveloperExtras"]							= @(YES);

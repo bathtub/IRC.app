@@ -129,6 +129,8 @@ typedef enum TXMainTextBoxFontSize : NSInteger {
 
 + (BOOL)automaticallyDetectHighlightSpam;
 
++ (BOOL)rememberServerListQueryStates;
+
 + (TXMainTextBoxFontSize)mainTextBoxFontSize;
 
 + (BOOL)logTranscript;

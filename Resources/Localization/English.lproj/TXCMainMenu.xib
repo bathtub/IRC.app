@@ -781,6 +781,7 @@ CQ
                 <outlet property="channelViewBox" destination="2806" id="2925"/>
                 <outlet property="channelViewMenu" destination="374" id="2942"/>
                 <outlet property="closeWindowMenuItem" destination="1770" id="2944"/>
+                <outlet property="dockMenu" destination="Q9Y-E0-gAT" id="aZo-Dh-Uts"/>
                 <outlet property="formattingMenu" destination="1930" id="2936"/>
                 <outlet property="inputTextField" destination="2871" id="2931"/>
                 <outlet property="joinChannelMenu" destination="963" id="2940"/>
@@ -2618,6 +2619,24 @@ CA
             </subviews>
         </customView>
         <userDefaultsController id="3106"/>
+        <menuItem title="File" tag="2" id="DYg-n3-mPQ" userLabel="Menu Item - Dock Menu">
+            <modifierMask key="keyEquivalentModifierMask"/>
+            <menu key="submenu" title="File" id="Q9Y-E0-gAT" userLabel="Menu - Dock Menu">
+                <items>
+                    <menuItem title="Disable All Notifications" tag="6667" id="dnc-ku-aQ3">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                        <connections>
+                            <action selector="toggleMuteOnAllNotifcations:" target="267" id="rEq-5t-bJ0"/>
+                        </connections>
+                    </menuItem>
+                    <menuItem title="Disable All Notification Sounds" tag="6666" keyEquivalent="M" id="5jG-1t-WG4">
+                        <connections>
+                            <action selector="toggleMuteOnNotificationSounds:" target="267" id="rBT-LB-lUy"/>
+                        </connections>
+                    </menuItem>
+                </items>
+            </menu>
+        </menuItem>
     </objects>
     <resources>
         <image name="FormattingColor_0" width="16" height="16"/>
