@@ -11,9 +11,13 @@ slightly easier to build as it does not require a code-signing identity, nor
 ~~nag~~ warn you about not having one. The links to the support channel, etc. have also been removed.
 
 #### Installing
-For the lazy, there is a binary available [here](https://github.com/g-nix/IRC.app/releases/download/1.0.0/IRC.app.tgz), built against the 10.8 SDK.
-I haven't tested it on anything besides my own machine. It is not codesigned,
-so you'll need to pacify Gatekeeper. Instead, consider:
+There is a binary available [here](http://github.com/g-nix/IRC.app/releases/download/3.2.3/IRC.app.zip),
+built against the 10.8 SDK.  
+~~It is not codesigned, so you'll need to pacify Gatekeeper.~~   
+***Update:*** I've decided, for now, to code sign the binary myself, until I have time to cherry-pick
+through the code upstream and figure out why, exactly, logging to file doesn't work when the binary is unsigned.
+I haven't tested it on anything besides my own machine; and it doesn't mean this is official in any way;
+no warranty expressed or implied, etc., etc. So please, instead, consider:
 
 #### Builing Your Own
 Requirements: Xcode installed and configured on a Mac running 10.8+.  
