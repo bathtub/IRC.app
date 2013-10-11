@@ -147,6 +147,7 @@
 		case 6884: // "Anyone Can Join (-i)"
 		case 6885: // "Manage All Modes"
 		case 51065: // "Toggle Visbility of Server List"
+		case 64611: // "Channel List…"
 		{
 			return _disableInSheet(YES);
 
@@ -500,6 +501,59 @@
 - (TVCLogView *)currentWebView
 {
 	return self.worldController.selectedViewController.view;
+}
+
+#pragma mark -
+#pragma mark Navigation Channel List
+
+- (void)populateNavgiationChannelList
+{
+	/* Remove all previous entries. */
+	[self.navigationChannelList removeAllItems];
+
+	/* Begin populating… */
+	NSInteger channelCount = 0;
+
+	for (IRCClient *u in self.worldController.clients) {
+		/* Create a menu item for the client title. */
+		TXSpecialNSMenuItemHelper *newItem = [TXSpecialNSMenuItemHelper menuItemWithTitle:TXTFLS(@"NavigationChannelListClientEntryTitle", u.name) target:nil action:nil];
+
+		[self.navigationChannelList addItem:newItem];
+
+		/* Begin populating channels. */
+		for (IRCChannel *c in u.channels) {
+			/* We only care about channels… */
+			if (c.isChannel) {
+				/* Create the menu item. Only first ten items get a key combo. */
+				if (channelCount >= 10) {
+					newItem = [TXSpecialNSMenuItemHelper menuItemWithTitle:TXTFLS(@"NavigationChannelListChannelEntryTitle", c.name)
+																	target:self
+																	action:@selector(navigateToSpecificChannelInNavigationList:)];
+				} else {
+					newItem = [TXSpecialNSMenuItemHelper menuItemWithTitle:TXTFLS(@"NavigationChannelListChannelEntryTitle", c.name)
+																	target:self
+																	action:@selector(navigateToSpecificChannelInNavigationList:)
+															 keyEquivalent:[NSString stringWithUniChar:('0' + channelCount)]
+														 keyEquivalentMask:NSCommandKeyMask];
+				}
+
+				/* The tag identifies each item. */
+				[newItem setUserInfo:[NSString stringWithFormat:@"%@ %@", u.config.itemUUID, c.config.itemUUID]];
+				[newItem setTag:64611]; // Use same tag for each to disable during sheets.
+
+				/* Add to the actaul navigation list. */
+				[self.navigationChannelList addItem:newItem];
+			}
+
+			/* Bump the count… */
+			channelCount += 1;
+		}
+	}
+}
+
+- (void)navigateToSpecificChannelInNavigationList:(TXSpecialNSMenuItemHelper *)sender
+{
+	[self.worldController select:[self.worldController findItemFromInfo:sender.userInfo]];
 }
 
 #pragma mark -

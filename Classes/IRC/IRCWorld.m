@@ -143,6 +143,15 @@
 	/* Draw default icon as soon as we setup… */
 	/* This is done to apply birthday icon as soon as we start. */
 	[TVCDockIcon drawWithoutCount];
+
+	/* Populate navigation list. */
+	[self updateNavigationChannelList];
+}
+
+- (void)updateNavigationChannelList
+{
+	/* Populate navigation list. */
+	[self.masterController.menuController populateNavgiationChannelList];
 }
 
 - (NSMutableDictionary *)dictionaryValue
@@ -862,6 +871,8 @@
 	if (adjust) {
 		[self adjustSelection];
 	}
+
+	[self updateNavigationChannelList];
 	
 	return c;
 }
@@ -992,6 +1003,8 @@
 
 		[self adjustSelection];
 	}
+
+	[self updateNavigationChannelList];
 }
 
 - (TVCLogController *)createLogWithClient:(IRCClient *)client channel:(IRCChannel *)channel
