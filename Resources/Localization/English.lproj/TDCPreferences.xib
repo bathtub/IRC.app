@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4510" systemVersion="13A584" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4511" systemVersion="13A598" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment version="1070" identifier="macosx"/>
         <development version="5000" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4511"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="TDCPreferencesController">
@@ -76,7 +76,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="367" y="318" width="534" height="195"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1366" height="746"/>
             <view key="contentView" id="4930">
                 <rect key="frame" x="0.0" y="0.0" width="534" height="195"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -426,7 +426,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" id="5623">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="5623">
                     <rect key="frame" x="64" y="147" width="404" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="5624">
@@ -483,7 +483,7 @@
                 <userLayoutGuide location="278" affinity="minY"/>
             </userGuides>
             <subviews>
-                <textField verticalHuggingPriority="750" id="4859">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="4859">
                     <rect key="frame" x="30" y="207" width="114" height="16"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Highlight words:" id="4891">
@@ -770,7 +770,7 @@
                         <action selector="onChangedAlertType:" target="-2" id="7359"/>
                     </connections>
                 </popUpButton>
-                <textField verticalHuggingPriority="750" id="6621">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="6621">
                     <rect key="frame" x="117" y="282" width="86" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="Current Alert:" id="6622">
@@ -2251,7 +2251,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
-                <textField verticalHuggingPriority="750" id="5313">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="5313">
                     <rect key="frame" x="31" y="341" width="227" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="The following addons are installed:" id="5314">
@@ -2260,7 +2260,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField verticalHuggingPriority="750" id="5315">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="5315">
                     <rect key="frame" x="31" y="57" width="476" height="41"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" alignment="left" id="5316">
@@ -2727,7 +2727,7 @@
                         <binding destination="1247" name="selectedIndex" keyPath="values.DefaultBanCommandHostmaskFormat" id="7213"/>
                     </connections>
                 </popUpButton>
-                <textField verticalHuggingPriority="750" id="6192">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="6192">
                     <rect key="frame" x="45" y="112" width="357" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="When used in the context of a hostmask an asterisk (*) represents a wildcard character that is matched by any possible value. " id="6193">
@@ -2762,7 +2762,7 @@
                 <userLayoutGuide location="21" affinity="minY"/>
             </userGuides>
             <subviews>
-                <textField verticalHuggingPriority="750" id="6649">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="6649">
                     <rect key="frame" x="31" y="187" width="473" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" alignment="center" id="6665">
@@ -2829,7 +2829,7 @@
                         <binding destination="1247" name="value" keyPath="values.MinimumWindowSizeIsNotForced" id="7502"/>
                     </connections>
                 </button>
-                <textField verticalHuggingPriority="750" id="7499">
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="7499">
                     <rect key="frame" x="317" y="118" width="201" height="14"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="** Restart required to apply changes." id="7500">
@@ -2851,7 +2851,7 @@
             </userGuides>
             <subviews>
                 <tabView controlSize="small" initialItem="6913" id="6911">
-                    <rect key="frame" x="10" y="12" width="515" height="418"/>
+                    <rect key="frame" x="10" y="11" width="515" height="418"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <tabViewItems>
                         <tabViewItem label="General" identifier="1" id="6913">
@@ -2950,9 +2950,9 @@
                                         </textFieldCell>
                                     </textField>
                                     <slider verticalHuggingPriority="750" id="D0f-oB-97t">
-                                       <rect key="frame" x="185" y="96" width="25" height="11"/>
+                                        <rect key="frame" x="186" y="92" width="244" height="10"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <sliderCell key="cell" controlSize="small" continuous="YES" state="on" alignment="left" minValue="0.20000000000000001" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="f75-2j-XO9"/>
+                                        <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" minValue="0.20000000000000001" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="f75-2j-XO9"/>
                                         <connections>
                                             <accessibilityConnection property="title" destination="kL4-Js-8e7" id="HCs-b4-ejU"/>
                                             <action selector="onChangedTransparency:" target="-2" id="38G-0v-edM"/>
@@ -2960,7 +2960,7 @@
                                         </connections>
                                     </slider>
                                     <textField verticalHuggingPriority="750" id="2Db-0T-2Gc">
-                                        <rect key="frame" x="185" y="124" width="25" height="11"/>
+                                        <rect key="frame" x="184" y="109" width="25" height="11"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="80%" id="k58-Xg-O9e">
                                             <font key="font" metaFont="miniSystem"/>
@@ -2969,7 +2969,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField verticalHuggingPriority="750" id="k84-6p-82M">
-                                        <rect key="frame" x="419" y="125" width="23" height="11"/>
+                                        <rect key="frame" x="416" y="109" width="23" height="11"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0%" id="z0u-Fe-ni8">
                                             <font key="font" metaFont="miniSystem"/>
@@ -2977,13 +2977,6 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <box autoresizesSubviews="NO" verticalHuggingPriority="750" alphaValue="0.5" title="Box" boxType="separator" titlePosition="noTitle" id="SKs-oC-6WA">
-                                        <rect key="frame" x="29" y="123" width="442" height="5"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <font key="titleFont" metaFont="system"/>
-                                    </box>
                                     <button id="891-QM-5Ov">
                                         <rect key="frame" x="10" y="202" width="357" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -3218,7 +3211,7 @@
                                             <binding destination="1247" name="value" keyPath="values.CopyTextSelectionOnMouseUp" id="7208"/>
                                         </connections>
                                     </button>
-                                    <textField verticalHuggingPriority="750" id="7140">
+                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="7140">
                                         <rect key="frame" x="38" y="23" width="423" height="13"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="Holding the command key (⌘) during selection disables option temporarily." id="7141">
