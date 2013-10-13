@@ -72,12 +72,7 @@
 
 - (NSArray *)badModes
 {
-	NSArray *modes;
-
-	modes = @[@"b", @"e", @"I"];
-	modes = [modes arrayByAddingObjectsFromArray:self.isupport.userModePrefixes.allKeys];
-
-	return modes;
+	return @[@"q", @"a", @"o", @"h", @"v", @"b", @"e", @"I"];
 }
 
 - (NSArray *)update:(NSString *)str
